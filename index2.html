@@ -4,14 +4,329 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Payooo First Page</title>
+  <!-- font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- DaisyUI cdn -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <!-- Tailwind cdn -->
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-slate-900">
-  <section class="max-w-md min-h-screen mx-auto">
+  <section class="max-w-md min-h-screen mx-auto bg-slate-100 p-6">
+    <!-- Navbar -->
+  <nav class="flex justify-between mb-5">
+     <div class="flex gap-4">
+      <img class="h-12 w-14" src="assets/Group.png" alt="">
+    <div>
+      <h2 class="font-extrabold">$<span id="amount-money">5000</span></h2>
+      <p>Available Balance</p>
+    </div>
+     </div>
+    <button id="logout" class="border border-solid border-slate-300 p-3 text-sm px-8 py-2 rounded-xl"><i class="fa-solid fa-right-from-bracket"></i> Log Out</button>
+  </nav>
+  <hr>
+    <!-- Welcome Section -->
+     <section class="mt-6">
+      <img src="assets/Navigation.png" alt="">
+      <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+     </section>
+     <!-- Cards Section -->
+      <section class="grid grid-cols-3 mt-10 gap-2">
+        <!-- Card-1 -->
+        <div id="card-1" class="cursor-pointer border border-solid border-[#ddd] rounded-xl py-5 px-3 justify-items-center text-center">
+          <img class="w-6 h-6" src="assets/wallet1.png" alt="">
+          <p class="font-semibold text-sm">Add Money</p>
+        </div>
+        <!-- Card-2 -->
+        <div id="card-2" class="cursor-pointer border border-solid border-[#ddd] rounded-xl py-5 px-3 justify-items-center text-center">
+          <img class="w-6 h-6" src="assets/send1.png" alt="">
+          <p class="font-semibold text-sm">Cashout</p>
+        </div>
+        <!-- Card-3 -->
+        <div id="card-3" class="border border-solid border-[#ddd] rounded-xl py-5 px-3 justify-items-center text-center cursor-pointer">
+          <img class="w-6 h-6" src="assets/money1.png" alt="">
+          <p class="font-semibold text-sm">Transfer Money</p>
+        </div>
+        <!-- Card-4 -->
+        <div id="card-4" class="border border-solid border-[#ddd] rounded-xl py-5 px-3 justify-items-center text-center cursor-pointer">
+          <img class="w-6 h-6" src="assets/bonus1.png" alt="">
+          <p class="font-semibold text-sm">Get Bonus</p>
+        </div>
+        <!-- Card-5 -->
+        <div id="card-5" class="border border-solid border-[#ddd] rounded-xl py-5 px-3 justify-items-center text-center cursor-pointer">
+          <img class="w-6 h-6" src="assets/purse1.png" alt="">
+          <p class="font-semibold text-sm">Pay Bill</p>
+        </div>
+        <!-- Card-6 -->
+        <div id="card-6" class="border border-solid border-[#ddd] rounded-xl py-5 px-3 justify-items-center text-center cursor-pointer">
+          <img class="w-6 h-6" src="assets/transaction1.png" alt="">
+          <p class="font-semibold text-sm">Transactions</p>
+        </div>
 
+      </section>
+          <!-- Add Money Section -->
+        <section id="addmoney-section">
+          <h1 class="text-xl font-bold mt-4">Add Money</h1>
+          <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                <form class="card-body">
+                  <!-- Input-1 -->
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Select A Bank</span>
+                    </label>
+                    <input id="account-num" type="text" placeholder="Select Bank" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-2 -->
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Bank Account Number</span>
+                    </label>
+                    <input id="account-num" type="number" placeholder="Enter 11 digit account number" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-3 -->
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Amount to Add</span>
+                    </label>
+                    <input id="amount" type="number" placeholder="Add Amount to withdraw" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-4 -->
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Pin Number</span>
+                    </label>
+                    <input id="password" type="password" placeholder="Enter 4 digit pin" class="input rounded-3xl bg-slate-100" required />
+                  </div>
+                  <!-- Button -->
+                  <div class="form-control mt-6">
+                    <button id="add-btn" class="btn btn-primary rounded-3xl text-white text-xl">Add Money</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cashout Section -->
+        <section id="cashout-section">
+          <h1 class="text-xl font-bold mt-4">Cash Out</h1>
+          <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                <form class="card-body">
+                  <!-- Input-1 -->
+                  <div id="input-1" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Agent Number</span>
+                    </label>
+                    <input id="account-num" type="text" placeholder="Enter 11 digit number" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-2 -->
+                  <div id="input-2" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Amount</span>
+                    </label>
+                    <input id="account-num" type="number" placeholder="Enter amount to withdraw" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-3 -->
+                  <div id="input-3" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Pin Number</span>
+                    </label>
+                    <input id="amount" type="number" placeholder="Enter 4 digit pin number" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Button -->
+                  <div class="form-control mt-6">
+                    <button id="add-btn" class="btn btn-primary rounded-3xl text-white text-xl">Withdraw Money</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Transfer Money -->
+        <section id="transfer-section">
+          <h1 class="text-xl font-bold mt-4">Transfer Money</h1>
+          <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                <form class="card-body">
+                  <!-- Input-1 -->
+                  <div id="input-1" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">User Account Number</span>
+                    </label>
+                    <input id="account-num" type="text" placeholder="Enter 11 digit number" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-2 -->
+                  <div id="input-2" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Amount</span>
+                    </label>
+                    <input id="account-num" type="number" placeholder="Enter amount to transfer" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-3 -->
+                  <div id="input-3" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Pin Number</span>
+                    </label>
+                    <input id="amount" type="number" placeholder="Enter 4 digit pin number" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Button -->
+                  <div class="form-control mt-6">
+                    <button id="add-btn" class="btn btn-primary rounded-3xl text-white text-xl">Send Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Get Bonus -->
+        <section id="bonus-section">
+          <h1 class="text-xl font-bold mt-4">Get Bonus</h1>
+          <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                <form class="card-body">
+                  <!-- Input-1 -->
+                  <div id="input-1" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Enter Bonus Coupon</span>
+                    </label>
+                    <input id="account-num" type="text" placeholder="Enter your coupon" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Button -->
+                  <div class="form-control mt-6">
+                    <button id="add-btn" class="btn btn-primary rounded-3xl text-white text-xl">Get Bonus</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Pay Bill -->
+        <section id="pay-section">
+          <h1 class="text-xl font-bold mt-4">Pay Bill</h1>
+          <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0">
+                <form class="card-body">
+                  <!-- Input-1 -->
+                  <div id="input-1" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Select to pay</span>
+                    </label>
+                    <input id="account-num" type="text" placeholder="Select Bank" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-2 -->
+                  <div id="input-2" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Biller account number</span>
+                    </label>
+                    <input id="account-num" type="number" placeholder="Enter account number" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-3 -->
+                  <div id="input-3" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Amount to pay</span>
+                    </label>
+                    <input id="amount" type="number" placeholder="Add amount to pay" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Input-4 -->
+                  <div id="input-3" class="form-control">
+                    <label class="label">
+                      <span class="font-bold">Pin number</span>
+                    </label>
+                    <input id="amount" type="number" placeholder="Enter 4 digit pin number" class="input bg-slate-100 rounded-3xl" required />
+                  </div>
+                  <!-- Button -->
+                  <div class="form-control mt-6">
+                    <button id="add-btn" class="btn btn-primary rounded-3xl text-white text-xl">Send Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Transactions -->
+        <section id="history-section">
+          <div class="flex justify-between items-center">
+            <h1 class="text-xl font-bold mt-4">Transaction History</h1>
+            <p class="mt-4">View All</p>
+          </div>
+          <!-- Item-1 -->
+          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+            <div class="flex justify-between w-full items-center">
+                <div class="flex gap-4">
+                  <div class="rounded-full p-3 bg-slate-200">
+                    <img src="assets/wallet1.png" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-base font-bold">Electricity Bill</h3>
+                  <p class="text-xs">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img src="assets/Frame.png" alt="">
+                </div>
+            </div>
+          </div>
+          <!-- Item-2 -->
+          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+            <div class="flex justify-between w-full items-center">
+                <div class="flex gap-4">
+                  <div class="rounded-full p-3 bg-slate-200">
+                    <img src="assets/wallet1.png" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-base font-bold">Electricity Bill</h3>
+                  <p class="text-xs">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img src="assets/Frame.png" alt="">
+                </div>
+            </div>
+          </div>
+          <!-- Item-3 -->
+          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+            <div class="flex justify-between w-full items-center">
+                <div class="flex gap-4">
+                  <div class="rounded-full p-3 bg-slate-200">
+                    <img src="assets/wallet1.png" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-base font-bold">Electricity Bill</h3>
+                  <p class="text-xs">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img src="assets/Frame.png" alt="">
+                </div>
+            </div>
+          </div>
+          <!-- Item-4 -->
+          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+            <div class="flex justify-between w-full items-center">
+                <div class="flex gap-4">
+                  <div class="rounded-full p-3 bg-slate-200">
+                    <img src="assets/wallet1.png" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-base font-bold">Electricity Bill</h3>
+                  <p class="text-xs">Today 01:44 AM</p>
+                  </div>
+                </div>
+                <div class="">
+                  <img src="assets/Frame.png" alt="">
+                </div>
+            </div>
+          </div>
+        </section>
   </section>
+
+  <script src="index2.js" ></script>
 </body>
 </html>
