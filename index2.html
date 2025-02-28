@@ -76,7 +76,7 @@
                     <label class="label">
                       <span class="font-bold ">Select A Bank</span>
                     </label>
-                    <select class="select w-full max-w-xs bg-slate-100 rounded-3xl">
+                    <select id="bank" class="select w-full max-w-xs bg-slate-100 rounded-3xl">
                       <option>Bkash</option>
                       <option>Nagad</option>
                       <option>Rocket</option>
@@ -88,7 +88,7 @@
                     <label class="label">
                       <span class="font-bold">Bank Account Number</span>
                     </label>
-                    <input id="add-input-2" type="number" placeholder="Enter 11 digit account number" class="input bg-slate-100 rounded-3xl" required />
+                    <input id="add-input-2" value="01609583916" type="number" placeholder="Enter 11 digit account number" class="input bg-slate-100 rounded-3xl" required />
                     
                   </div>
                   <!-- Input-3 -->
@@ -103,7 +103,7 @@
                     <label class="label">
                       <span class="font-bold">Pin Number</span>
                     </label>
-                    <input id="add-input-4" type="password" placeholder="Enter 4 digit pin" class="input rounded-3xl bg-slate-100" required />
+                    <input id="add-input-4" value="1234" type="password" placeholder="Enter 4 digit pin" class="input rounded-3xl bg-slate-100" required />
                   </div>
                   <!-- Button -->
                   <div class="form-control mt-6">
@@ -127,7 +127,7 @@
                     <label class="label">
                       <span class="font-bold">Agent Number</span>
                     </label>
-                    <input id="cash-input-1" type="number" placeholder="Enter 11 digit number" class="input bg-slate-100 rounded-3xl" required />
+                    <input value="01698765434" id="cash-input-1" type="number" placeholder="Enter 11 digit number" class="input bg-slate-100 rounded-3xl" required />
                   </div>
                   <!-- Input-2 -->
                   <div id="input-2" class="form-control">
@@ -141,7 +141,7 @@
                     <label class="label">
                       <span class="font-bold">Pin Number</span>
                     </label>
-                    <input id="cash-input-3" type="password" placeholder="Enter 4 digit pin number" class="input bg-slate-100 rounded-3xl" required />
+                    <input value="1234" id="cash-input-3" type="password" placeholder="Enter 4 digit pin number" class="input bg-slate-100 rounded-3xl" required />
                   </div>
                   <!-- Button -->
                   <div class="form-control mt-6">
@@ -266,8 +266,11 @@
             <h1 class="text-xl font-bold mt-4">Transaction History</h1>
             <p class="mt-4">View All</p>
           </div>
+          <div id="transaction-container">
+
+          </div>
           <!-- Item-1 -->
-          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+          <!-- <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
             <div class="flex justify-between w-full items-center">
                 <div class="flex gap-4">
                   <div class="rounded-full p-3 bg-slate-200">
@@ -282,9 +285,9 @@
                   <img src="assets/Frame.png" alt="">
                 </div>
             </div>
-          </div>
+          </div> -->
           <!-- Item-2 -->
-          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+          <!-- <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
             <div class="flex justify-between w-full items-center">
                 <div class="flex gap-4">
                   <div class="rounded-full p-3 bg-slate-200">
@@ -299,9 +302,9 @@
                   <img src="assets/Frame.png" alt="">
                 </div>
             </div>
-          </div>
+          </div> -->
           <!-- Item-3 -->
-          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+          <!-- <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
             <div class="flex justify-between w-full items-center">
                 <div class="flex gap-4">
                   <div class="rounded-full p-3 bg-slate-200">
@@ -316,9 +319,9 @@
                   <img src="assets/Frame.png" alt="">
                 </div>
             </div>
-          </div>
+          </div> -->
           <!-- Item-4 -->
-          <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
+          <!-- <div class="border border-solid border-[#ddd] bg-white rounded-2xl mt-4 p-4 flex items-certer w-full">
             <div class="flex justify-between w-full items-center">
                 <div class="flex gap-4">
                   <div class="rounded-full p-3 bg-slate-200">
@@ -333,7 +336,7 @@
                   <img src="assets/Frame.png" alt="">
                 </div>
             </div>
-          </div>
+          </div> -->
         </section>
 
         <!-- Latest Payment -->
@@ -413,7 +416,14 @@
          </section>
         
   </section>
-  
-  <script src="index2.js" ></script>
+
+  <script src="addMoney.js"></script>
+  <script src="cashOut.js"></script>
+  <script src="transferMoney.js"></script>
+  <script src="getBonus.js"></script>
+  <script src="payBill.js"></script>
+  <script src="transactionHistory.js"></script>
+  <script src="togglle.js" ></script>
+  <script src="utilities.js" ></script>
 </body>
 </html>
