@@ -53,10 +53,10 @@ cd your-repo-name
 2. Open the Project
 
 
-You can open the main HTML file directly in your browser:
-Navigate to the project folder.
-Double-click the index.html file, or
-Right-click it and choose “Open with” → your browser
+   You can open the main HTML file directly in your browser:
+   Navigate to the project folder.
+   Double-click the index.html file, or
+   Right-click it and choose “Open with” → your browser
 
 That’s it! The app should now run locally without any additional setup.
 
