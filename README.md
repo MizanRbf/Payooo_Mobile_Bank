@@ -54,4 +54,4 @@ All scripts are written in pure JavaScript (no frameworks).
 
 1. Clone the Repository
    ```bash
-   git clone https://github.com/MizanRbf/smart-banking-app.git
+   git clone https://github.com/MizanRbf/Payooo_Mobile_Bank.git
