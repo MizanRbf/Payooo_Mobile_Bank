@@ -7,8 +7,7 @@ A modern and interactive smart banking simulation web app built with **HTML5**, 
 
 ## 🔗 Live Preview
 
-🚀 [Click Here to Visit the Live Site](https://your-live-site-url.com)  
-*(Replace this link with your deployed Netlify/Vercel/GitHub Pages URL)*
+🚀 [Click Here to Visit the Live Site](https://mizanrbf.github.io/Payooo_Mobile_Bank/)  
 
 ---
 
