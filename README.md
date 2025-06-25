@@ -5,12 +5,6 @@ A modern and interactive smart banking simulation web app built with **HTML5**, 
 
 ---
 
-## 🔗 Live Preview
-
-🚀 [Click Here to Visit the Live Site](https://mizanrbf.github.io/Payooo_Mobile_Bank/)  
-
----
-
 ## 🖼️ Preview
 
 ![Smart Banking App Screenshot](assets/screenshot.png)
@@ -49,8 +43,15 @@ All scripts are written in pure JavaScript (no frameworks).
 
 ---
 
+## 🔗 Live Preview
+
+🚀 [Click Here to Visit the Live Site](https://mizanrbf.github.io/Payooo_Mobile_Bank/)  
+
+---
+
 ## 🧪 How to Run Locally
 
 1. Clone the Repository
    ```bash
    git clone https://github.com/MizanRbf/Payooo_Mobile_Bank.git
+   
