@@ -5,12 +5,6 @@ A modern and interactive smart banking simulation web app built with **HTML5**, 
 
 ---
 
-## 🖼️ Preview
-
-![Smart Banking App Screenshot](assets/screenshot.png)
-
----
-
 ## 🛠️ Tech Stack
 
 - ✅ **HTML5** – Structure
