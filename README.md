@@ -50,7 +50,9 @@ All scripts are written in pure JavaScript (no frameworks).
    git clone https://github.com/MizanRbf/Payooo_Mobile_Bank.git
 cd your-repo-name
 
-2.Open the Project
+2. Open the Project
+
+
 You can open the main HTML file directly in your browser:
 Navigate to the project folder.
 Double-click the index.html file, or
